@@ -1,0 +1,378 @@
+*{
+    margin:0px;
+    scroll-behavior: smooth;
+}
+.col-lg-6{
+    padding: 0px !important;
+}
+body{
+    background-color: black;
+    font-family: 'Darker Grotesque', sans-serif;
+    color: aliceblue;
+    background-image: url('public/clouds.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.clouds{
+    height:100%;
+    width:50%;
+    position: fixed;
+    /* object-fit: cover; */
+    z-index: 3  ;
+}
+#home{
+    height:90vh;
+    width:90vw;
+    background-color: #011a30;
+    position: absolute;
+    top:5vh;
+    left:5vw;
+    z-index:4;
+    border-radius: 25px;
+}
+#home img{
+    width: 44vw;
+    height: 88vh;
+}
+h1,h2{
+    color:#f9a01b !important;
+    text-align: center;
+    font-family:Caesar;
+    font-size: 50px;
+}
+h3{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 2%;
+}
+#explore{
+    position: absolute;
+    bottom: 15%;
+    width: 50vw;margin-left: 20vw;
+}
+#asgard,#xander,#titan,#krypton,#qward,#thanagar,#kiwano,#basalt,#dependee,#morito,#petrosia,#shinzu {
+    width:25vw;
+    height:25vw;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:5vh !important;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:80%;
+}
+#asgard{
+    background-image: url('public/Trending\ destinations/Asgard.png');
+    background-color: #501d75;
+}
+#xander{
+    background-image: url('public/Trending\ destinations/Xandar.png');
+    background-color: #064850;
+}
+#titan{
+    background-image: url('public/Trending\ destinations/Titan.png');
+    background-color: #5c372e;
+}
+#krypton{
+    background-image: url('public/Trending\ destinations/Krypton.png');
+    background-color: #644243;
+}
+#qward{
+    background-image: url('public/Trending\ destinations/Qward.png');
+    background-color: #60497d;
+}
+#thanagar{
+    background-image: url('public/Trending\ destinations/Thanagar.png');
+    background-color: #3f7482;
+}
+
+#kiwano{
+    background-image: url('public/Trending\ cuisines/Kiwano .png');
+    background-color:#5c372f;
+}
+#basalt{
+    background-color: #615d1d;
+    text-align: center;
+    background-image: url('public/Trending\ cuisines/Basalt .png');
+}
+#morito{
+    background-color: #445463;
+    background-image: url('public/Trending\ cuisines/Morito .png');
+}
+#dependee{
+    background-color: #56482d;
+    background-image: url('public/Trending\ cuisines/Deepdene .png');
+}
+#petrosia{
+    background-color: #20524f;
+    background-image: url('public/Trending\ cuisines/Petrosia.png');
+}
+#shinzu{
+    background-color: #1d3b83;
+    background-image: url('public/Trending\ cuisines/Shinzu .png');
+}
+#planets{
+    height:90vh;
+    width:90vw;
+    border-radius: 25px;
+    position: absolute;
+    left:5%;
+    top:105vh;
+    background-color: #011a30;
+    z-index:4;
+    background-image: url('public/Stars\ Background.png') !important;
+}
+
+#destinations{
+    height:90vh;
+    width:90vw;
+    border-radius: 25px;
+    position: absolute;
+    left:5%;
+    top:205vh;
+    background-color: #011a30;
+    z-index:4;
+    background-image: url('public/Stars\ Background.png') !important;
+    text-align: center;
+}
+#cuisines{
+    height:90vh;
+    width:90vw;
+    border-radius: 25px;
+    position: absolute;
+    left:5%;
+    top:305vh;
+    background-color: #011a30;
+    z-index:4;
+    background-image: url('public/Stars\ Background.png') !important;
+}
+.planet{
+    transition:all 500ms ease-out ;
+}
+#planets h1{
+    color:aliceblue !important;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-top: 2%;
+}
+.planet:hover{
+    transform: scale(1.2);
+    border-radius: 5px;
+}
+#sun{
+    position:absolute;
+    top:30%;
+}
+#mercury{
+    position:absolute;
+    top: 45%;
+    left:15%;
+}
+#venus{
+    position:absolute;
+    top: 45%;
+    left:23%;
+}
+#earth{
+    position:absolute;
+    top: 40%;
+    left:31%;
+}
+#mars{
+    position:absolute;
+    top: 45%;
+    left: 43%;
+}
+#jupiter{
+    position:absolute;
+    top: 35%;
+    left:50%;
+}
+#saturn{
+    position:absolute;
+    top: 40%;
+    left:65%;
+}
+#uranus{
+    position:absolute;
+    top: 45%;
+    left:75%;
+}
+#neptune{
+    position:absolute;
+    top: 45%;
+    left:85%;
+}
+.destination,.cuisine{
+    position:relative;
+    top:10%;
+}
+#destinations h2,#cuisines h2{
+    font-size: 38px;
+    margin-top:5vh !important;
+    color: aliceblue !important;
+}
+#star-1{
+    position:absolute;
+    top:20%;
+    left:20%;
+}
+#star-2{
+    position:absolute;
+    top:75%;
+    left:80%;
+}
+#star-3{
+    position:absolute;
+    top:15%;
+    left:70%;
+}
+#shooting-star{
+    position:absolute;
+    top:25%;
+    left:45%;
+}
+#meteror{
+    position:absolute;
+    top:80%;
+    right:70%;
+}
+#data{
+    padding:15%;
+    text-align: center;
+}
+.line{
+    font-size:1.35em;font-weight: 100;
+    text-align: center;
+    margin-top: 10%;
+}
+button{
+    margin-top: 10%;
+    color: #011a30 !important;
+    font-size: x-large !important;
+    padding: 5px 20px !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    border:1.5px solid white !important;
+    transition: all 0.5s;
+    background-color: white !important;
+    text-align: center;
+}
+button:hover{
+    color: white !important;
+    background-color: #011a30 !important;
+    border:1.5px solid #f9a01b !important;
+}
+a.right.carousel-control,a.left.carousel-control{
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,0)));
+    opacity: 1;
+}
+@media screen and (max-width:992px) {
+    body{
+        background-image: url('public/clouds-mobile.png');
+        background-size: cover;
+    }
+    #home{
+        height:95vh;
+        width:90vw;
+        position:absolute;
+        top:5vh;
+        left:5vw;
+        font-size:1.75em;
+    }
+    #home img{
+        width:96% !important;
+        height:auto;
+        margin-left: 2vw;
+    }
+    #planets{
+        position: absolute;
+        top:105vh;
+        left:5vw;
+        width:90vw;
+        height:40vh;
+    }
+    #explore{
+        position: absolute;
+        bottom:25%;
+    }
+    #destinations{
+        width:90vw;
+        height:50vh;
+        position: absolute;
+        left:5vw;
+        top:150vh;
+    }
+    #cuisines{
+        width:90vw;
+        height:50vh;
+        position: absolute;
+        left:5vw;
+        top:205vh;
+    }
+    #asgard,#xander,#titan,#krypton,#qward,#thanagar,#kiwano,#basalt,#dependee,#morito,#petrosia,#shinzu {
+        width:30vh;
+        height:30vh;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top:5vh;
+        background-size:80%;
+    }
+    #destinations h2,#cuisines h2{
+        margin-top: 5vh !important;
+    }
+    #sun{
+        height: 25%;
+        position:absolute;
+        top:35%
+    }
+    #earth{
+        height: 10%;
+        position: absolute;
+        top:43% ;
+    }
+    #jupiter{
+        height: 15%;
+        position: absolute;
+        top:42%;
+        left:53%
+    }
+    #saturn{
+        height: 15%;
+        position: absolute;
+        top:42%;
+        left:67%
+    }
+    #uranus{
+        height: 10%;
+        position: absolute;
+        top:45%;
+        left:80%
+    }
+    #neptune{
+        height: 10%;
+        position: absolute;
+        top:45%;
+        left:90%
+    }
+    button{
+        font-size:40px !important;
+        margin-top: 5%;
+        height: 5vh;
+    }
+    #data{
+        padding: 0px;
+        height: 30vh;
+    }
+    .line{
+        height:15vh;
+        padding:5%;
+        margin-top: 0% !important;
+    }
+    #data h1{
+        margin-top: 10%;
+    }
+    h3{
+        font-size: 60px;
+    }
+}

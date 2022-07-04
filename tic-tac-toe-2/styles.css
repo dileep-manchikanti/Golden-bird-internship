@@ -1,0 +1,144 @@
+body{
+    height: 100vh;
+    background:radial-gradient(rgb(33,182,168),rgb(2, 110, 99));
+    color: azure;
+}
+.cell{
+    height:100px;
+    border:solid rgb(209, 209, 27) .1em;
+}
+h1{
+    font-size: 60px;
+    font-weight: 300;
+}
+.row{
+    width:300px;
+    margin-top:5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    width: 40vw;
+    margin-left: 30vw;
+    margin-top: 5vh;
+    font-size: xx-large;
+    padding: 5px;
+    background-color:rgb(2, 110, 99);
+    color:azure;
+}
+#c1{
+    border-left:0px;border-top: 0px;
+}
+#c2{
+    border-top: 0px;
+}
+#c3{
+    border-right:0px;border-top: 0px;
+}
+#c4{
+    border-left:0px;
+}
+#c6{
+    border-right:0px;
+}
+#c7{
+    border-left:0px;border-bottom: 0px;
+}
+#c8{
+    border-bottom: 0px;
+}
+#c9{
+    border-right:0px;border-bottom: 0px;
+}
+.X{
+    font-size: 50px;
+    color:azure;
+}
+.O{
+    font-size: 50px;
+    color:darkgreen;
+}
+#result{
+    font-size: xx-large;
+    color:aliceblue;
+}
+span{
+    position:relative;
+    left:25%;
+    top:15%;
+}
+@media screen and (min-height:1023px) and (min-width:767px){
+    #game{
+        height:100vh;
+    }
+    .row{
+        width: 750px;
+        margin-top: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cell{
+        height: 250px;
+    }
+    #result{
+        font-size: 70px;
+        margin-top: 7vh;
+    }
+    .X{
+        font-size: 150px;
+    }
+    .O{
+        font-size:150px;
+    }
+    h1{
+        font-size: 120px;
+    }
+    button{
+        font-size: 60px;
+        width:40vw;
+        margin-left: 30vw;
+        margin-top: 10vh;
+    }
+    span{
+        position:relative;
+        left:20%;
+        top:0%;
+    }
+}
+@media screen and (max-width:760px) {
+    .row{
+        width: 900px;
+        margin-top: 10vh !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cell{
+        height: 300px;
+    }
+    .X{
+        font-size: 150px;
+    }
+    .O{
+        font-size:150px;
+    }
+    #result{
+        font-size: 70px;
+        position:absolute;
+        left:30%;
+    }
+    h1{
+        font-size: 110px;
+    }
+    button{
+        font-size: 60px;
+        margin-top:5vh !important;
+        width:40vw;
+        margin-left: 30vw;
+    }
+    span{
+        font-size: 150px;
+        position: relative;
+        top:10%;
+        left: 30%;
+    }
+}

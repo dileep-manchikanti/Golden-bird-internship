@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            ROCK PAPER SCISSORS
+        </title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1 class="text-center">Rock Paper Scissors</h1>
+            <div id="game">
+                <div id="scores">
+                <span id="you" class="candidate">You
+                <span class="score" id="yourScore">0</span>
+                <span class="score">-</span>
+                <span class="score" id="compScore">0</span>
+                <span id="comp" class="candidate">Comp
+                </div>
+                <div class="options row">
+                <div class="option" id="paper" class="col" ></div>
+                <div class="option"  id="rock" class="col"></div>
+                <div class="option"  id="scissors" class="col"></div>
+                </div>
+                <div id="result" class="text-center"></div>
+                <button class="restart" onclick="reset()">RESTART</button>
+                <div id="popUp">
+                    <span id="popUpText">Computer is Choosing...</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+h1{
+    font-size: 50px;
+    padding:1%;
+    background-color:#f7f8f2;
+}
+h1{
+    font-weight: 800;
+}
+.candidate{
+    padding-left: 2%;
+    padding-right: 2%;
+    color:azure;
+    width:fit-content;
+    color:green
+}
+#scores{
+    font-size:2.5rem;
+    width:50vw;
+    margin-left:25vw ;
+    margin-top:5vh;
+    text-align: center;
+}
+.score{
+    color:chocolate;
+    margin-left: 1.1rem;
+    margin-right:1.1rem;
+}
+.option{
+    height:12em;
+    width:12em;
+    margin:3.5%;
+    background-color: yellow;
+    border-radius: 50%;
+    float:left;
+    transition: all 500ms ease;
+}
+.row{
+    width:60vw;
+    margin-left:20vw;
+    text-align: center;
+    margin-top: 5vh;
+}
+#rock{
+    background-image: url('public/rock.png');
+    background-size: cover;
+    background-position:center;
+}
+#paper{
+    background-image: url('public/paper.png');
+    background-size: cover;
+    background-position:center;
+}
+#scissors{
+    background-image: url('public/scissor.png');
+    background-size: cover;
+    background-position:center;
+}
+#result{
+    font-size: xx-large;
+    margin-top: 2vh;
+}
+button.restart{
+    background-color: #f7f8f2;
+    color: #192e47;
+    font-size: larger;
+    font-weight: 600;
+    width: 10vw;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 1vh;
+    margin-left:45vw;
+    cursor:pointer;
+}
+#popUp{
+    height:80vh;
+    width: 60vw;
+    background-image:url('https://c.tenor.com/FBeNVFjn-EkAAAAC/ben-redblock-loading.gif');
+    background-position: center;
+    background-size: cover;
+    margin-left: 20vw;
+    position:absolute;
+    top:12vh;
+    color:white;
+    display: none;
+    text-align: center;
+}
+#popUpText{
+    font-size: 35px;
+    position: relative;
+    padding: 20px;
+}
+.option:hover{
+    background-color:#555555;
+    transform:scale(1.1);
+}
+@media screen and (max-width: 992px) {
+    .option{
+        height: 10em;
+        width: auto;
+    }
+    #scores{
+        font-size: 5rem;
+        width:80vw;
+        margin-left: 10vw;
+        margin-top: 2vh;
+    }
+    .options{
+        width:50vw;
+        margin-left: 25vw;
+        margin-top: 2vh;
+    }
+    .option{
+        width:100%;
+        font-size: 2.5rem;
+        margin-top: 2vh;
+    }
+    button.restart{
+        font-size: 60px;
+        width:40vw;
+        margin-left: 30vw;
+        margin-top: 2vh;
+        padding:2%;
+    }
+    #result{
+        font-size:60px;
+        margin-top: 2vh;
+    }
+    #popUp{
+        height:80vh;
+        width:80vw;
+        position: absolute;
+        top:10vh;
+        margin-left: 10vw;
+    }
+    #popUpText{
+        font-size:80px;
+    }
+    h1{
+        font-size: 100px;
+    }
+  }

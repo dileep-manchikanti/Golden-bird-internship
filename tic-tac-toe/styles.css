@@ -1,0 +1,81 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #4a06d3;
+    margin: 0;
+}
+#game{
+    text-align: center;
+    margin-top: 2vh;
+}
+.img{
+    height: 100vh;
+    width: 100vw;
+    z-index:-1;
+    position: absolute;
+    top:0px;
+}
+h1{
+    font-weight: 600;
+    font-size: 2.5em;
+    text-shadow: 2px 2px gray;
+}
+.icon{
+    position: relative;
+    top:25%;
+    left:2%;
+}
+.cell{
+    height:80px;
+    width: 80px;
+    border-radius: 50%;
+    background-image: url('/public/black_circle.png');
+    background-size: cover;
+    margin: 3%;
+    box-shadow: 3px 3px #0000ff;
+}
+.grid{
+    width:300px;
+    height:300px;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right:auto;
+}
+#result{
+    font-size: xx-large;
+    color:aliceblue;
+}
+button{
+    padding:10px;
+    border-radius: 10px;
+    background-color: green;
+    color: azure;
+    font-size: xx-large;
+    font-weight: 800;
+    margin-top:2vh;
+    margin-left: auto !important;
+    margin-right:auto !important;
+}
+@media screen and (max-width:992px) {
+    .grid{
+        width: 600px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto !important;
+    }
+    .cell{
+        height:150px;
+        width: 150px;
+        background-image: url('/public/black_circle-2.png');
+    }
+    #result{
+        font-size: 70px;
+        margin-top: 5vh;
+    }
+    h1{
+        font-size: 110px;
+    }
+    button{
+        font-size: 60px;
+    }
+}
+

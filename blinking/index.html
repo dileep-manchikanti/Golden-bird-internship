@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            BLINKING GAME
+        </title>
+        <meta charset="utf-8">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="APP.JS"></script>
+    </head>
+    <body>
+        <div class="container">
+        <h1 class="text-center">Memory Game</h1>
+        <div class="example"></div>
+        <div id="memory"><span>Memory</span></div>
+        <div id="player1">Player 1's Turn</div>
+        <div id="player2"></div>
+        <div class="block col-md-5" id="block1" onclick="select(0)"></div>
+        <div class="block col-md-5" id="block2" onclick="select(1)"></div>
+        <div class="block col-md-5" id="block3" onclick="select(2)"></div>
+        <div class="block col-md-5" id="block4" onclick="select(3)"></div>
+        <button onclick="restart()" class="restart">START</button>
+        <button onclick="choose()" class="submit">SUBMIT</button>
+        </div>
+    </body>
+</html>

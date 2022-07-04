@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    scroll-behavior:smooth;
+}
+body{
+    height:100vh;
+    width: 100vw;
+    background-color: black !important;
+    background: url("../public/Stars\ Background.png");
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 40px;
+}
+h1{
+    color: white;
+    font-size: 70px;
+    font-weight: lighter;
+    position: relative;
+    text-align: center;
+    font-family:Caesar;
+    position: relative;
+    margin-top: 5%;
+}
+img#planet{
+    width: 40vw;
+}
+#planet1 img{
+    width: 10vw;
+}
+#planet2 img{
+    width: 10vw;
+}
+#planet{
+    margin-top: 5%;
+    margin-left: 30vw;
+}
+#planet-1{
+    position:absolute;
+    bottom:40%;
+    left:-80% !important;
+    transform: scaleX(-1);
+}
+#planet-2{
+    position:absolute;
+    bottom:40%;
+    right:120%;
+}
+#line{
+    font-size:25px;color: white;
+    text-align: center;
+    width: 100%;
+    width:50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+}
+#timeline{
+    margin-top: 5%;
+}
+#inhabitants div{
+    font-size: x-large;font-weight: 600;
+}
+#cuisine div{
+    font-size: x-large;font-weight: 600;
+}
+#gravity{
+    text-align: center;
+    position: relative;
+    left:-9%;
+}
+#cuisine{
+    text-align: center;
+    position: relative;
+    left:-7%;
+}
+#planetoids{
+    text-align: center;
+    position: relative;
+    left:-11%;
+}
+#inhabitants{
+    text-align: center;
+    position: relative;
+    left:-5%;
+}
+#gravity div{
+    font-size: x-large;font-weight: 600;
+}
+#planetoids div{
+    font-size: x-large;font-weight: 600;
+}
+button{
+    width: 20%;
+    margin-top: 5%;
+    margin-left: 40%;
+    font-size: 0.8em;
+    font-family: 'Darker Grotesque', sans-serif;
+    padding:.3em;
+    border-radius:1em;
+    border:2px solid white;
+    font-weight: 600;
+    text-align: center;
+    transition: all 400ms;
+}
+button:hover{
+    background-color:black;
+    color:white;
+}
+
+#planet1{
+    position: absolute;
+    top:40%;
+    color:white;
+    font-size: 80%;
+    transform: scaleX(-1);
+}
+#planet2{
+    position: absolute;
+    right:-3%;
+    top:40%;
+    color:white;
+    font-size: 80%;
+    width:fit-content
+}
+#explore{
+    position: absolute;
+    top:140%;
+}
+@media screen  and (max-width:992px){
+    #timeline{
+        margin-top: 20%;
+    }
+    #planet1{
+        position: absolute;
+        left:-3%;
+        top:30%;
+    }
+    #planet2{
+        position: absolute;
+        right:-3%;
+        top:30%;
+    }
+    img#planet{
+        width:50vw;
+    }
+    #planet{
+        margin-left: 25vw;
+        margin-top: 10%;
+    }
+    #line{
+        margin-top: 5%;
+        font-size: 1em;
+    }
+    button{
+        margin-top: 10%;
+    }
+    #cuisine img,#inhabitants img,#gravity img,#planetoids img{
+        height: 40%;
+    }
+    #planet-1,#planet-2{
+        font-size:2em;
+    }
+    button{
+        font-size:1em;
+    }
+    #planet-1{
+        position:absolute;
+        bottom:35%;
+        left:-150% !important;
+        transform: scaleX(-1);
+    }
+}

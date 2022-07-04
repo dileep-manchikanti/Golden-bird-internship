@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+body{
+    background-color:#192e47;;
+}
+#header{
+    font-size: x-large;
+    text-align: center;
+    padding:1%;
+    background-color:aliceblue;
+    font-weight: 800;
+}
+#game{
+    
+    height:90vh;
+    width: 100vw;
+}
+.candidate{
+    padding-left: 2%;
+    padding-right: 2%;
+    color:azure;
+    width:fit-content;
+    color:aqua
+}
+#scores{
+    font-size:2.5rem;
+    width:50% !important;
+    margin-top: 2%;
+    margin-left: 33% !important;
+    /* margin-right: 25vw; */
+}
+.score{
+    color:azure;
+    margin-left: 1rem;
+    margin-right:1rem;
+}
+.option{
+    font-size: 5em;
+    padding:40px;
+    background-color: azure;
+    border-radius: 50%;
+    margin:20px;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.options{
+    text-align: center;
+    width:50%;
+    margin-top:2%;
+    margin-left: 25%;
+}
+.option:hover{
+    background-color:#555555;
+    transform:scale(1.1);
+}
+#popUp{
+    height: 25em;
+    width: 50vw;
+    background-image:url('https://c.tenor.com/FBeNVFjn-EkAAAAC/ben-redblock-loading.gif');
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    bottom: 5%;
+    margin-left: 25vw;
+    color:white;
+    display: none;
+    text-align: center;
+}
+#popUpText{
+    font-size: 35px;
+    position: relative;
+    padding: 20px;
+}
+#result{
+    color:white;
+    margin-top:1%;
+    font-size: 30px;
+    width:30%;
+    margin-left:35% ;
+    text-align: center;
+}
+button.restart{
+    background-color: #87CEEB;
+    color: #192e47;
+    font-size: larger;
+    width: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 45%;
+    cursor:pointer;
+}
+.active{
+    background-color:#87CEEB;
+}
+#line1{
+    position:relative;
+    /* left:10%; */
+}
+@media screen and (max-width: 992px) {
+    #game{
+        height: 90vh;
+    }
+    #scores{
+        font-size: 5rem;
+        width:80vw !important;
+        margin-left: 10vw !important;
+        text-align: center;
+    }
+    .options{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .option{
+        margin:2vh;
+        font-size: 25vw !important;
+        padding:-4%;
+    }
+    button.restart{
+        font-size: 60px;
+        padding:2%;
+        width:40%;
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+    #result{
+        width:60%;
+        margin-left:20%;
+        margin-top:5%;
+        font-size:60px;
+    }
+    #popUp{
+        height:70em;
+        width:80vw;
+        position: absolute;
+        top:9vh;
+        margin-left: 10vw;
+    }
+    #popUpText{
+        font-size:80px;
+    }
+    #header{
+        font-size: 40px;
+    }
+  }
