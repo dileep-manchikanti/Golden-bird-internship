@@ -33,6 +33,7 @@ body{
 #home img{
     width: 44vw;
     height: 88vh;
+    margin-top: 1vh;
 }
 h1,h2{
     color:#f9a01b !important;
@@ -43,23 +44,37 @@ h1,h2{
 h3{
     font-size: 40px;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 1%;
+}
+a{
+    color:#ccc;
+    text-align: center;
+    font-weight: 600;
+    font-family:Caesar;
+}
+a img{
+    margin-bottom:1.75vh;
+}
+a:hover{
+    text-decoration: none;
+    color: aliceblue;
 }
 #explore{
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     width: 50vw;margin-left: 20vw;
 }
 #asgard,#xander,#titan,#krypton,#qward,#thanagar,#kiwano,#basalt,#dependee,#morito,#petrosia,#shinzu {
-    width:25vw;
-    height:25vw;
+    width:45vh;
+    height:45vh;
     margin-left:auto;
     margin-right: auto;
-    margin-top:5vh !important;
+    margin-top:10vh;
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size:80%;
+    opacity: 1;
 }
 #asgard{
     background-image: url('public/Trending\ destinations/Asgard.png');
@@ -146,6 +161,22 @@ h3{
     z-index:4;
     background-image: url('public/Stars\ Background.png') !important;
 }
+#footer{
+    position: absolute;
+    top:405vh;
+    background-color:grey;
+    width:100vw;
+    height:10vh;
+    font-size: large;
+}
+#footer-1{
+    padding-top: 2vh;
+    padding-left: 5vw;
+}
+#footer-2{
+    padding-top: 2vh;
+    padding-right: 4vw;
+}
 .planet{
     transition:all 500ms ease-out ;
 }
@@ -162,46 +193,56 @@ h3{
 #sun{
     position:absolute;
     top:30%;
+    font-size:large;
+    text-align: left;
 }
 #mercury{
     position:absolute;
     top: 45%;
     left:15%;
+    font-size:small;
 }
 #venus{
     position:absolute;
     top: 45%;
     left:23%;
+    font-size:small;
 }
 #earth{
     position:absolute;
     top: 40%;
     left:31%;
+    font-size:small;
 }
 #mars{
     position:absolute;
     top: 45%;
     left: 43%;
+    font-size:small;
 }
 #jupiter{
     position:absolute;
     top: 35%;
     left:50%;
+    font-size:small;
 }
 #saturn{
     position:absolute;
     top: 40%;
     left:65%;
+    font-size:small;
 }
 #uranus{
     position:absolute;
     top: 45%;
     left:75%;
+    font-size:small;
 }
 #neptune{
     position:absolute;
     top: 45%;
     left:85%;
+    font-size:small;
 }
 .destination,.cuisine{
     position:relative;
@@ -294,7 +335,11 @@ a.right.carousel-control,a.left.carousel-control{
     }
     #explore{
         position: absolute;
-        bottom:25%;
+        bottom:5%;
+    }
+    #footer{
+        position: absolute;
+        top:260vh;
     }
     #destinations{
         width:90vw;
@@ -331,6 +376,10 @@ a.right.carousel-control,a.left.carousel-control{
         position: absolute;
         top:43% ;
     }
+    #mars{
+        position: absolute;
+        left:45%;
+    }
     #jupiter{
         height: 15%;
         position: absolute;
@@ -341,7 +390,7 @@ a.right.carousel-control,a.left.carousel-control{
         height: 15%;
         position: absolute;
         top:42%;
-        left:67%
+        left:70%
     }
     #uranus{
         height: 10%;
@@ -354,6 +403,9 @@ a.right.carousel-control,a.left.carousel-control{
         position: absolute;
         top:45%;
         left:90%
+    }
+    #explore{
+        position:absolute
     }
     button{
         font-size:40px !important;
@@ -374,5 +426,9 @@ a.right.carousel-control,a.left.carousel-control{
     }
     h3{
         font-size: 60px;
+    }
+    #footer{
+        padding-top:2vh;
+        font-size: 20px;
     }
 }

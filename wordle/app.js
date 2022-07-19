@@ -1,10 +1,15 @@
 var index=1;
 var start=1;
 var gameOver=false;
-var words=[['K','U','M','A','R']];
+var words=["KUMAR"];
 var word=[];
 window.addEventListener('load',()=>{
-
+    var reader=new FileReader();
+    reader.onload = function(e) {
+        var text = reader.result;
+        console.log(text);
+    };
+    reader.readAsText("data.txt");
 })
 window.addEventListener('keyup',(event)=>{
     if(gameOver){
@@ -22,20 +27,32 @@ window.addEventListener('keyup',(event)=>{
         }
     }
     else{
-        if(letter.charCodeAt(0))
-        if(index-start>=5)return;
         var letter=event.key;
+        if(letter==='Enter'){
+            submit(index);
+            return;
+        }
+        if(letter.length>1)return;
+        if(!((letter.charCodeAt(0)>=65 && letter.charCodeAt(0)<=90) || (letter.charCodeAt(0)>=97 && letter.charCodeAt(0)<=122)))return;
+        if(index-start>=5)return;
         letter=letter.toUpperCase();
         element=document.getElementById(index.toString());
-        element.classList.add('letter');
         element.innerText=letter;
         word.push(letter);
-        console.log(word);
         index++;
+        console.log(index,start);
     }
 });
-function submit(){
-    console.log(index-start);
+function restart(){
+    window.location="/";
+}
+function submit(index){
+    console.log(index);
+    if(index===31){
+        gameOver=true;
+        alert("Game Over");
+        return;
+    }
     if((index-start)!=5)return;
     var element=null,won=true;
     for(var i=0;i<5;i++){

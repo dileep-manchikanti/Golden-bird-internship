@@ -55,6 +55,7 @@ img#planet{
 }
 #timeline{
     margin-top: 5%;
+    text-align: center;
 }
 #inhabitants div{
     font-size: x-large;font-weight: 600;
@@ -65,22 +66,16 @@ img#planet{
 #gravity{
     text-align: center;
     position: relative;
-    left:-9%;
 }
 #cuisine{
     text-align: center;
-    position: relative;
-    left:-7%;
 }
 #planetoids{
     text-align: center;
     position: relative;
-    left:-11%;
 }
 #inhabitants{
     text-align: center;
-    position: relative;
-    left:-5%;
 }
 #gravity div{
     font-size: x-large;font-weight: 600;

@@ -4,6 +4,7 @@
         <title>SPACE TRAVEL</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,15 +31,15 @@
         </div>
         </div>
         <div id="planets">
-            <a href="sun.html"><img src="public/planets/Sun.png" id="sun" class="planet"></a>
-            <a href="mercury.html"><img src="public/planets/Mercury vector.png" id="mercury" class="planet"></a>
-            <a href="venus.html"><img src="public/planets/Venus.png" id="venus" class="planet"></a>
-            <a href="earth.html"><img src="public/planets/Earth.png" id="earth" class="planet"></a>
-            <a href="mars.html"><img src="public/planets/Mars.png" id="mars" class="planet"></a>
-            <a href="jupiter.html"><img src="public/planets/Jupiter.png" id="jupiter" class="planet"></a>
-            <a href="saturn.html"><img src="public/planets/Saturn.png" id="saturn" class="planet"></a>
-            <a href="uranus.html"><img src="public/planets/Uranus.png" id="uranus" class="planet"></a>
-            <a href="neptune.html"><img src="public/planets/neptune.png" id="neptune" class="planet"></a>
+            <a href="sun.html" id="sun"><img src="public/planets/Sun.png" class="planet"><br>Sun</a>
+            <a href="mercury.html" id="mercury"><img src="public/planets/Mercury vector.png" class="planet"><br>Mercury</a>
+            <a href="venus.html" id="venus"><img src="public/planets/Venus.png" class="planet"><br>Venus</a>
+            <a href="earth.html" id="earth"><img src="public/planets/Earth.png" class="planet"><br>Earth</a>
+            <a href="mars.html" id="mars"><img src="public/planets/Mars.png" class="planet"><br>Mars</a>
+            <a href="jupiter.html" id="jupiter"><img src="public/planets/Jupiter.png" class="planet"><br>Jupiter</a>
+            <a href="saturn.html" id="saturn"><img src="public/planets/Saturn.png" class="planet"><br>Saturn</a>
+            <a href="uranus.html" id="uranus"><img src="public/planets/Uranus.png" class="planet"><br>Uranus</a>
+            <a href="neptune.html" id="neptune"><img src="public/planets/neptune.png" class="planet"><br>Neptune</a>
             <img src="public/Star 1 .png" id="star-1">
             <img src="public/Star 1 .png" id="star-2">
             <img src="public/Star 2 .png" id="star-3">
@@ -52,6 +53,8 @@
                 <div class="carousel-inner">
                   <div class="item active">
                     <div  id="asgard">
+                      <div id="asgardImg">
+                      </div>
                     </div>
                     <div class="caption">
                         <h3>ASGARD</h3>
@@ -59,6 +62,7 @@
                   </div>              
                   <div class="item">
                     <div id="xander">
+                      <div id="xanderImg"></div>
                     </div>
                     <div class="caption">
                         <h3>XANDAR</h3>
@@ -91,7 +95,6 @@
                     </div>
                   </div>
                 </div>
-              
                 <!-- Left and right controls -->
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                   <span class="glyphicon glyphicon-chevron-left"></span>
@@ -151,6 +154,14 @@
                     </a>
                   </div>
             </div>
+            </div>
+            <div id="footer" class="row">
+              <div id="footer-1" class="col-8">
+              <i class="fa fa-copyright"></i> GoldenBirdEducation &nbsp Privacy &nbsp Terms &nbsp Sitemap &nbsp Company &nbsp Details &nbsp Destinations
+              </div>
+              <div id="footer-2" class="col-4">
+                <i class="fa fa-globe"></i>&nbsp English(IN) &nbsp <i class="fa fa-inr"></i> GBC &nbsp Support & resources
+                </div>
             </div>
     </body>
 </html>
