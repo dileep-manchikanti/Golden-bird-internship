@@ -1,12 +1,22 @@
 var choices=[];
 var player=1;
-var looser;
+var gameOver;
 var choosed=false;
 var targets=[];
+var sound;
 function changePlayer(){
     if(player==1)player=2;
     else player=1;
+    return player;
 }
+window.addEventListener('load',()=>{
+    sound=document.createElement('audio');
+    sound.src="public/sounds/background.mp3";
+    sound.loop="true";
+    sound.autoplay="true";
+    sound.style.display="none";
+    sound.play();
+});
 async function select(cell){
     var elements=Array.from(document.querySelectorAll('.block'));
     var element=elements[cell];
@@ -22,11 +32,10 @@ async function select(cell){
 }
 function restart(){
     player=1;
-    looser=null;
-    var player1=document.getElementById("player1");
-    var player2=document.getElementById("player2");
-    player1.innerText="Player 1's Turn";
-    player2.innerText="";
+    gameOver=false;
+    var player=document.getElementById("player");
+    player.innerText="Player 1's Turn";
+    sound.play();
     play();
 }
 function remove(start,index){
@@ -37,10 +46,6 @@ function remove(start,index){
     return res;
 }
 async function play(){
-    if(looser!=null){
-        alert("Game over,start a new game");
-        return;
-    }
     var elements=Array.from(document.querySelectorAll('.block'));
     var n=Math.ceil(Math.random()*4);
     var start=[0,1,2,3];
@@ -65,18 +70,14 @@ async function play(){
         copy.classList.remove("animation");
     } 
 }
-function announceWinner(Looser){
-    looser=Looser;
-    var looser=document.getElementById("player"+Looser);
-    changePlayer(Looser);
-    var Winner=document.getElementById("player"+player);
-    console.log(player,Looser);
-    looser.innerText="Player "+Looser+" lost the game.";
-    Winner.innerText="Player "+player+" won the game.";
-    console.log("player"+looser+" lost the game");
+function announceWinner(player){
+    var element=document.getElementById("player");
+    player=changePlayer(player);
+    gameOver=true;
+    element.innerText="Player "+player+" won the game.";
 }
 async function choose(){   
-    if(looser!=null){
+    if(gameOver){
         alert("Game over,start a new game");
         return;
     }
@@ -94,19 +95,12 @@ async function choose(){
         console.log(choices);
         console.log(targets);
         changePlayer();
-        var element1=document.getElementById('player1');
-        var element2=document.getElementById('player2');
+        var element=document.getElementById('player');
         if(player==1){
-             
-            console.log(element1);
-            element2.innerText="";
-            element1.innerText="Player 1's Turn";
+            element.innerText="Player 1's Turn";
         }
         else{
-            
-            console.log(element2);
-            element1.innerHTML="";
-            element2.innerText="Player 2's Turn";
+            element.innerText="Player 2's Turn";
         }
         setTimeout(()=>{
             play(); 

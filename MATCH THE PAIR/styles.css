@@ -2,55 +2,82 @@
     width: 100vw;
 }
 body{
-    background-color: black;
+    background-color: #0E0E52;
     text-align: center;
+    /* background-image: url('public/images/background.webp'); */
+    background-size: cover;
+    background-position : center;
+    height: 100vh;
+    width:100vw;
+    font-family: 'Darker Grotesque', sans-serif;
 }
-.grid{
-    width:600px;
-    height:400px;
-    margin-left:auto;
-    margin-right: auto;
-    margin-top:2%;
-}
-H1{
-    COLOR:GREEN;
+h1{
+    color:bisque;
+    font-weight: 200;
 }
 .cell{
+    height:15vh;
+    width:15vh;
     padding: 0px;
+    border-radius: 1em;
+    margin-bottom: 5px;
+    margin-right: 0.6vw;
 }
 .row{
-    width:100%;
-    height:100px;   
-    margin: 0px;
+    width:66vh;
+    height:fit-content;   
+    margin-top:2%;
+    margin-left: auto;
+    margin-right: auto;
 }
 button{
-    margin-top: 1%;
-    font-size: larger;
-    border-radius:10px;
-    padding: 5px 20px;
-    background-color:#ccc;
+    margin-top:1%;
+    font-size: x-large;;
+    border-radius:7px !important;
+    padding:0px !important;
+    padding-left:20px !important;
+    padding-right:20px !important;
+    background-color:WHITE !important;
     border:2px solid #ccc;
+    color:black !important;
 }
 button:hover{
-    background-color: black;
-    border-color: yellow;
-    color:white;
+    background-color: #0E0E52 !important;
+    border-color: WHITE !important;
+    color:white !important;
 }
-.result{
-    font-size: x-large;
+#result{
+    font-size: X-large;
     color:white;
-    margin-top: -2.5%;
+    margin-top: 2.5%;
 }
 
 @media screen and (max-width:992px){
-    .grid{
-        width:900px;
-        height:600px;
-        /* margin-left:auto !important; */
-        /* margin-right: 100px !important; */
-    }
     .row{
-        height:150px;   
-        margin: 0px;
+        margin-top: 20% !important;
+        width:84%;
+        height: fit-content;
+        margin-left: auto !important;
+        margin-right: auto !important; 
     }
+    h1{
+        font-size:40px !important;
+        margin-top:2%;
+        margin-bottom:3% !important;
+    }
+    #result{
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+    .cell{
+        width:20vw !important;
+        height:20vw;
+        margin-right:1vw;
+    }
+    /* .button{
+        font-size:2em;
+        width:40vw;
+        margin-left: 30vw;
+        margin-top: 2%;
+    } */
 }

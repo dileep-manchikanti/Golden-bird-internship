@@ -7,15 +7,15 @@ window.addEventListener('load',()=>{
     document.querySelector(".container").innerHTML="<div class='grid'></div>";
     for(var i=0;i<9;i++){
         document.querySelector(".grid").innerHTML+="<div class='row' id='row"+row+"'></div>";
-        for(var j=1;j<10;j++){
+        for(var j=0;j<9;j++){
             document.getElementById("row"+row).innerHTML+="<div class='col  cell'></div>";
         }
         row++;
     }
     const cells=Array.from(document.querySelectorAll(".cell"));
     cells.forEach((cell)=>{
-        cell.style.border="2px solid red";
-        cell.style.backgroundColor='green';
+        cell.style.border="2px solid #0E0E52";
+        cell.style.backgroundColor='white';
     })
     cells[player].classList.add('player');
     cells[finish].classList.add("finish");
@@ -41,9 +41,10 @@ window.addEventListener('load',()=>{
 });
 window.addEventListener('keyup',(e)=>{
     var move=e.key;
+    console.log(move);
     const cells=Array.from(document.querySelectorAll(".cell"));
     if(move==='ArrowUp' && player>8){
-        if(cells[player].style.borderTopColor!='green'){
+        if(cells[player].style.borderTopColor!='white'){
             return;
         }
         cells[player].classList.remove("player");
@@ -52,7 +53,7 @@ window.addEventListener('keyup',(e)=>{
         cells[player].classList.add('player');
     }
     if(move==='ArrowDown' && player<72){
-        if(cells[player].style.borderBottomColor!='green'){
+        if(cells[player].style.borderBottomColor!='white'){
             return;
         }
         cells[player].classList.remove("player");
@@ -61,7 +62,7 @@ window.addEventListener('keyup',(e)=>{
         cells[player].classList.add('player');
     }
     if(move==='ArrowLeft' && player%9!=0){
-        if(cells[player].style.borderLeftColor!='green'){
+        if(cells[player].style.borderLeftColor!='white'){
             return;
         }
         cells[player].classList.remove("player");
@@ -70,7 +71,7 @@ window.addEventListener('keyup',(e)=>{
         cells[player].classList.add("player2");
     }
     if(move==='ArrowRight' && (player+1)%9!=0){
-        if(cells[player].style.borderRightColor!='green'){
+        if(cells[player].style.borderRightColor!='white'){
             return;
         }
         cells[player].classList.remove("player");
@@ -100,28 +101,20 @@ function getNeighbour(current){
 function removeWall(cells,current,next){
     console.log(current,next);
     if(current+1===next){
-        // cells[current].style.borderRightWidth="0px";
-        // cells[next].style.borderLeftWidth="0px";
-        cells[current].style.borderRightColor="green";
-        cells[next].style.borderLeftColor="green";
+        cells[current].style.borderRightColor="white";
+        cells[next].style.borderLeftColor="white";
 
     }
     else if(current-1===next){
-        // cells[current].style.borderLeftWidth="0px";
-        // cells[next].style.borderRightWidth="0px";
-        cells[current].style.borderLeftColor="green";
-        cells[next].style.borderRightColor="green";
+        cells[current].style.borderLeftColor="white";
+        cells[next].style.borderRightColor="white";
     }
     else if(current+9===next){
-        // cells[current].style.borderBottomWidth="0px";
-        // cells[next].style.borderTopWidth="0px";
-        cells[current].style.borderBottomColor="green";
-        cells[next].style.borderTopColor="green";
+        cells[current].style.borderBottomColor="white";
+        cells[next].style.borderTopColor="white";
     }
     else if(current-9===next){
-        // cells[current].style.borderTopWidth="0px";
-        // cells[next].style.borderBottomWidth="0px";
-        cells[current].style.borderTopColor="green";
-        cells[next].style.borderBottomColor="green";
+        cells[current].style.borderTopColor="white";
+        cells[next].style.borderBottomColor="white";
     }
 }

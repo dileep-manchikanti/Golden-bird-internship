@@ -1,12 +1,15 @@
-.container{
-    width: 100vw;
+*{
+    margin: 0px;
 }
 body{
-    background-color: black;
+    background-color: black !important;
+    /* background-image:url("./background.") !important; */
+    background-size:cover;
+    background-position: center;
     text-align: center;
-}
-hr{
-    background-color: white;
+    background-repeat: no-repeat;
+    width:100vw;
+    height:100vh;
 }
 .grid{
     width:250px;
@@ -15,12 +18,17 @@ hr{
     margin-right: auto;
     margin-top:7.5%;
 }
-H1{
+h1{
     COLOR:GREEN;
     margin-top: 5vh;
 }
 .letter{
-    font-size: x-large;
+    font-size:20px;
+    color:white;
+    text-align: center;
+}
+.letter-grid{
+    font-size:x-large;
     color:white;
     text-align: center;
 }
@@ -35,7 +43,16 @@ H1{
     margin: 0px;
 }
 button{
-    margin-top: 2%;
+    margin-top: 1%;
+    font-size: x-large;
+    padding:10px;
+    border-radius: 10px;
+    border:2px solid black;
+}
+button:hover{
+    background-color:black;
+    color:white;
+    border-color: orange;
 }
 .grey{
     background-color: #404040;
@@ -49,11 +66,79 @@ button{
     background-color: #B59F3b !important;
     border-color: #B59F3b !important;
 }
-/* @media screen and (max-width:992px) {
+body {
+font: 71%/1.5 Verdana, Sans-Serif;
+background: #eee;
+}
+#keyboard {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+#keyboard li {
+float: left;
+margin: 0 5px 5px 0;
+width: 50px;
+height: 60px;
+line-height: 40px;
+text-align: center;
+background: black;
+border: 1px solid #f9f9f9;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+.capslock, .tab, .left-shift {
+clear: left;
+}
+#keyboard .tab, #keyboard .delete {
+width: 100px;
+}
+#keyboard .capslock {
+width: 100px;
+}
+#keyboard .return {
+width: 100px;
+}
+#keyboard .left-shift {
+width: 125px;
+}
+#keyboard .right-shift {
+width: 125px;
+}
+.lastitem {
+margin-right: 0;
+}
+#keyboard li:hover {
+position: relative;
+top: 1px;
+left: 1px;
+border-color: #e5e5e5;
+cursor: pointer;
+}
+.keyboard{
+    margin-top:10%;
+    width:85vw;
+    margin-left: auto;
+    margin-right: auto;
+    visibility:hidden;
+}
+@media screen and (max-width:992px){
     .grid{
-        width:80%;
-        height:20%;
-        margin-left: 10%;;
-        margin-top:35%;
+        width:800px;
+        height:960px;
+        margin-top:7.5%;
     }
-} */
+    .row{
+        height:160px;
+    }
+    button{
+        margin-top: 6%;
+        font-size:40px;
+    }
+    .letter-grid{
+        font-size: 100px;
+    }
+    h1{
+        font-size: 60px;
+    }
+}
