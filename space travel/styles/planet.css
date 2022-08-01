@@ -83,10 +83,15 @@ img#planet{
 #planetoids div{
     font-size: x-large;font-weight: 600;
 }
+.explore{
+    margin-left: 30%;
+}
+.home{
+    margin-left: 10%;
+}
 button{
-    width: 20%;
+    width: 15%;
     margin-top: 5%;
-    margin-left: 40%;
     font-size: 0.8em;
     font-family: 'Darker Grotesque', sans-serif;
     padding:.3em;

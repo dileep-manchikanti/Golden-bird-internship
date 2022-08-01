@@ -3,39 +3,52 @@ body{
     background-size: cover;
     background-position: center;
     text-align: center;
+    background-attachment: fixed;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .grid{
-    height:54vh;
-    width:54vh;
-    margin-left: auto;
+    height:42vh;
+    width:84vh;
+    margin: 0px;
+    margin-left:auto;
     margin-right: auto;
-    margin-top:2.5%;
+    margin-top:18vh;
 }
 .row{
     width:100%;
-    height:6vh;
+    height:7vh;
 }
 h1{
     color:white;
     font-weight:400;
+    font-size:50px;
+    margin-top:3vh;
+}
+.col{
+    padding: 0px !important;
 }
 .cell{
     height:100%;
-    width:100%;
-    box-shadow: 5px;
+    /* background-image: url('public/grass.jfif'); */
 }
 .player2{
     background-image: url('public/player.png');
-    background-size: cover;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .player{
     background-image: url('public/player2.png');
-    background-size: cover;
+    background-size: contain;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .finish{
     background-image: url('public/home.png');
-    background-size:250%;
-    background-position: center;
+    background-size:150%;
+    background-position:center;
+    
 }
 @media screen and (max-width:992px){
     .grid{
