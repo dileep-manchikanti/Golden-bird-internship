@@ -44,7 +44,7 @@ window.addEventListener('keyup',(e)=>{
     console.log(move);
     const cells=Array.from(document.querySelectorAll(".cell"));
     if(move==='ArrowUp' && player>5){
-        if(cells[player].style.borderTopColor!=''){
+        if(cells[player].style.borderTopColor=='#0E0E52'){
             return;
         }
         cells[player].classList.remove("player");

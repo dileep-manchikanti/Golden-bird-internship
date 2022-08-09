@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TASK MANAGER</title>
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles.css" rel="stylesheet">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div class="task-tracker">
+        <h1>TASKS MANAGER</h1>
+        <div class="addTask">
+            <input type="text" id="task" class="form-control" placeholder="Add Your Task Here" >
+            <div id="example">E.g: grab a dozen eggs</div>
+            <div id="createTask" onclick="addTask()"><i class="fa fa-plus" aria-hidden="true"></i>
+                Create Task</div>
+        </div>
+        <div class="tasks">
+            <h2>Current Tasks</h2>
+            <hr>
+            <div id="yourTasks" class="row"></div>
+        </div>
+        <div class="completed">
+            <h2>Completed Tasks:</h2>
+            <hr>
+            <div id="CompletedTasks" class="row"></div>
+        </div>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Do You Want to Delete or Re-Assign?</p>
+              <div class="row popUp">
+              <div class="col-5"><button id="yes">Delete</button></div>
+              <div class="col-5"><button id="no">Re-Assign</button></div>
+              </div>
+            </div>
+            </div>
+          <!-- <div class="empty">.</div>
+          </div> -->
+    </body>
+</html>

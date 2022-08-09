@@ -1,0 +1,226 @@
+body{
+    background-color:#afddf1;
+}
+.task-tracker{
+    width:60% !important;
+    background-color: #fefaee;
+    margin-left:20%;
+    margin-top:5%;
+    border:1.5px solid black;
+    border-radius:30px;
+    margin-bottom:5%;
+    height: fit-content;
+}
+h1{
+    text-align: center;
+    background-color: #ffc1c2;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin:0px;
+    border-bottom:1.5px solid black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-family: monospace;
+}
+#example{
+    background-color: #ffe4f7;
+    width:90%;
+    text-align: center;
+    margin-top:5%;
+    padding:15px;
+    border:1.5px solid black;
+    border-radius:40px;
+    font-size:25px;
+    margin-left:5%;
+}
+#createTask{
+    background-color: #ffdad4;
+    width:30%;
+    margin-top: 5%;
+    margin-left: 35%;
+    text-align: center;
+    padding:10px;
+    border:1.5px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: all 600ms;
+}
+#createTask:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.addTask{
+    width:100%;
+    height: fit-content;
+    margin-top:5vh;
+}
+#task{
+    width:90% !important;
+    margin-left: 5%;
+}
+.tasks,.completed{
+    width:95%;
+    margin-left:5%;
+}
+h2{
+    margin-top:10vh;
+}
+h3{
+    font-weight: 500;
+    font-size:22px;
+}
+hr{
+    width:95%;
+    border-width: 1.5px;
+    background-color: black;
+    margin:0px;
+    margin-bottom:3%;
+}
+#yourTasks,#completedTasks{
+    list-style: none;
+    margin:0px;
+    padding:0px;
+    margin-top:3%;
+}
+input{
+    margin-right:10px;
+    border:1.5px solid black !important;
+    border-radius: 30px !important;
+    font-size:20px !important;
+}
+.card{
+    color:#0E0E52;
+    border:1.5px solid black;
+    border-radius: 30px;
+    width:fit-content;
+    font-weight: 400;
+    padding:8px;
+    padding-left: 40px;
+    padding-right:40px;
+    margin-right:10px !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.fff0c8{
+    background-color: #fff0c8;
+}
+.ccead8{
+    background-color:#ccead8;
+}
+.fee1d3{
+    background-color: #fee1d3;
+}
+.c8e6e9{
+    background-color: #c8e6e9;
+}
+.e7ffc4{
+    background-color: #e7ffc4;
+}
+i{
+    width:fit-content;
+    margin: 0px !important;
+    padding:0px !important;
+}
+.empty{
+    margin-top: 10%;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    margin-top:15vh;
+    height:40vh;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 30px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  p{
+    text-align: center;
+    font-size: 30px;
+  }
+  .popUp{
+    width:80%;
+    margin-left:10%;
+  }
+  button{
+    width:100%;
+    font-size: 30px;
+    border-radius: 15px;
+  }
+@media screen and (max-width:992px) {
+    h1{
+        font-size: 80px;
+    }
+    h3{
+        font-size:40px;
+    }
+    input{
+        font-size: 40px !important;
+    }
+    .task-tracker{
+        width:80% !important;
+        margin-left: 10%;
+        margin-top:20%;
+    }
+    #example{
+        font-size: 50px;
+        margin-top: 10%;
+    }
+    #createTask{
+        font-size: 50px;
+        width:50%;
+        margin-left:25%;
+        margin-top:10%;
+    }
+    #task{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 60px;
+    }
+    div.card{
+        font-size: 100px !important;
+    }
+    .modal-content {
+        margin-top:30vh;
+        height:20vh;
+      }
+      p{
+        font-size: 50px;
+      }
+      button{
+        font-size: 30px;
+      }
+}
