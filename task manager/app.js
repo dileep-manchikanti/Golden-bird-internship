@@ -3,7 +3,9 @@ var completed=[];
 colors=["fff0c8","ccead8","fee1d3","c8e6e9"];
 // window.addEventListener('load',()=>{
 //     document.querySelector('body').style.backgroundColor="red";
-//     setTimeout()
+//     setTimeout(()=>{
+//         document.querySelector('body').style.backgroundColor="white";
+//     },1000);
 // })
 function addTask(){
     var taskList=document.getElementById('yourTasks');
@@ -15,6 +17,7 @@ function addTask(){
     "</h3></div>";
     }
 }
+//
 function reTask(task){
     var modal = document.getElementById("myModal");
     var span = document.getElementsByClassName("close")[0];
